@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    android:fitsSystemWindows="true"
+    android:layout_margin="18dp"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="14dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_section"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Section"
+            android:textColor="@color/black"
+            android:fontFamily="@font/montserratalternates_black"
+            android:padding="4dp"
+            />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="140dp"
+            android:layout_below="@+id/tv_title"
+            android:layout_marginTop="8dp"
+            android:fitsSystemWindows="true"
+            android:background="@color/white"
+            />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:layout_below="@+id/tv_section"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/versa_versa"
+            android:textColor="@color/black"
+            android:padding="4dp"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_abstract"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="abstract"
+            android:layout_toRightOf="@+id/imageView"
+            android:layout_below="@+id/tv_title"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/black"
+            android:padding="4dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_byline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="byLine"
+            android:layout_above="@+id/tv_urlLink"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="12dp"
+            android:fontFamily="@font/roboto_black"
+            android:textColor="@color/black"
+            android:padding="4dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_urlLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="url"
+            android:layout_above="@+id/tv_publishDate"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/skyblue"
+            android:padding="4dp"
+            android:layout_marginTop="8dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_publishDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="publish Date"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:fontFamily="@font/roboto_black"
+            android:textColor="@color/black"
+            android:padding="4dp"
+            android:layout_marginTop="8dp"
+            android:textStyle="italic"
+            />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
